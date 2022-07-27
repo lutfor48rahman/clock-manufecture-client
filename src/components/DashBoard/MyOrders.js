@@ -9,7 +9,7 @@ const MyOrders = () => {
     const handdleDetele = id => {
         const proceed = window.confirm('Are You Want Delete This item!!');
         if (proceed) {
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://ancient-inlet-12712.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

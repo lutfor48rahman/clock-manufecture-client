@@ -6,7 +6,7 @@ const useTools = (props,toolId) => {
     // const [tools, setTools] = useState({});
 
     // useEffect(() => {
-    //     const url = `http://localhost:5000/tools/${tools}`;
+    //     const url = `https://ancient-inlet-12712.herokuapp.com/tools/${tools}`;
     //     console.log(url);
     //     fetch(url)
     //         .then(res => res.json())

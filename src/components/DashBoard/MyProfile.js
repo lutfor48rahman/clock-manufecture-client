@@ -16,7 +16,7 @@ const MyProfile = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        const url = `http://localhost:5000/users`;
+        const url = `https://ancient-inlet-12712.herokuapp.com/users`;
         console.log(url);
         fetch(url, {
             method: 'POST',

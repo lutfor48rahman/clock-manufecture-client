@@ -6,7 +6,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/reviews`;
+        const url = `https://ancient-inlet-12712.herokuapp.com/reviews`;
         fetch(url, {
             method: 'GET',
             headers: {

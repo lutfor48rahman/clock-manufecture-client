@@ -13,7 +13,7 @@ const Purchase = () => {
     const [tools, setTools] = useState({});
     console.log(tools);
     useEffect(() => {
-        const url = `http://localhost:5000/tools/${toolId}`;
+        const url = `https://ancient-inlet-12712.herokuapp.com/tools/${toolId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())
@@ -23,7 +23,7 @@ const Purchase = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        const url = `http://localhost:5000/order`;
+        const url = `https://ancient-inlet-12712.herokuapp.com/order`;
         fetch(url, {
             method: 'POST',
             headers: {
